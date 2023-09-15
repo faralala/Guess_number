@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/src/styles/style.css" />
+	<title>Игра: угадай число</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="canvas">
+			<h1 class="desc__title">Угадай число</h1>
+			<form>
+				<div class="desc__subtitle">
+					<label class="filed__form__label" for="minRange">Минимальное значение:</label>
+					<input class='field__form__input' type="number" id="minRange" min="1" max="1000" value="1">
+					<label for="maxRange">Максимальное значение:</label>
+					<input class='field__form__input' type="number" id="maxRange" min="1" max="1000" value="100">
+				</div>
+				<div class="desc__subtitle__game">
+					<label for="userGuess">Ваше число:</label>
+					<input class='field__form__input' type="number" id="userGuess" min="1" max="1000">
+					<button class='field__form__btn' type="button" id="guessButton">Попробовать</button>
+					<button class='field__form__btn' type="button" id="restartButton">Начать заново</button>
+				</div>
+
+			</form>
+			<p id="message"></p>
+			<p>Попыток: <span id="attempts">0</span></p>
+		</div>
+	</div>
+
+	<script src="/src/js/app.js"></script>
+</body>
+
+</html>
